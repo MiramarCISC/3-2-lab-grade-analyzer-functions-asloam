@@ -49,12 +49,7 @@ bool isPassing(double average) {
 
 bool isValidScore(double score) {
     // Return true when score is between 0 and 100, inclusive.
-    if(score >= 0 && score <= 100) {
-        return true;
-    }
-    else {
-        return false;
-    }
+    return score >= 0 && score <= 100;
 }
 
 void printGradeReport(double total, double average, char letterGrade, bool passing) {
