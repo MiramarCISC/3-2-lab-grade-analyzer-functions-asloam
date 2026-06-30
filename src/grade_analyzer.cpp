@@ -17,11 +17,7 @@ double calculateAverage(double total, int count) {
     return total / count;
 }
 
-// Returns 'A' for averages 90 or higher.
-// Returns 'B' for averages 80 or higher.
-// Returns 'C' for averages 70 or higher.
-// Returns 'D' for averages 60 or higher.
-// Returns 'F' otherwise.
+//Returns grade letter according to average. pxpham: shortens comment
 char determineLetterGrade(double average) {
     if(average >= 90) return 'A';
     if(average >= 80) return 'B';
@@ -41,8 +37,7 @@ bool isValidScore(double score) {
     return score >= 0 && score <= 100;
 }
 
-// Prompts the user for a score until a valid score is entered
-// Returns the validated score
+// Prompts the user for a score until a valid score is entered. pxpham: shortens comment
 double getValidScore(int scoreNumber) {
     double score;
     cout << "Enter score" << scoreNumber << ": ";
@@ -56,8 +51,7 @@ double getValidScore(int scoreNumber) {
     return score;
 }
 
-// Command-line grade report
-// Includes: total points, average score, letter grade, and passing status
+// Command-line grade report. pxpham: shortens comment
 void printGradeReport(double total, double average, char letterGrade, bool passing) {
     cout << endl;
     cout << "Grade Report" << endl;
