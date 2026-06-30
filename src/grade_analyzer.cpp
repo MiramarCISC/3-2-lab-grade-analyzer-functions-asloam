@@ -44,12 +44,7 @@ char determineLetterGrade(double average) {
 
 bool isPassing(double average) {
     // Return true when average is 70 or higher.
-    if(average >= 70) {
-        return true;
-    }
-    else {
-        return false;
-    }
+    return average >= 70;
 }
 
 bool isValidScore(double score) {
